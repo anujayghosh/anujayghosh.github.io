@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anujayghosh.github.io/sitemap.xml 
