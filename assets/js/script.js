@@ -8,7 +8,9 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+if (sidebarBtn) {
+  sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+}
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -37,19 +39,23 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+    if (filterItems[i]) { // Check if filterItems[i] exists
+      if (selectedValue === "all") {
+        filterItems[i].classList.add("active");
+      } else if (filterItems[i].dataset.category && filterItems[i].dataset.category.includes(selectedValue)) {
+        filterItems[i].classList.add("active");
+      } else {
+        filterItems[i].classList.remove("active");
+      }
     } else {
-      filterItems[i].classList.remove("active");
+      console.error("Filter item not found:", filterItems[i]);
     }
   }
 }
 
 // add event in all filter button items for large screen
 if (filterBtn.length > 0) {
-  let lastClickedBtn = filterBtn[0];
+  let lastClickedBtn = filterBtn[0]; // Initialize to the first button
 
   for (let i = 0; i < filterBtn.length; i++) {
     filterBtn[i].addEventListener("click", function () {
@@ -57,9 +63,11 @@ if (filterBtn.length > 0) {
       if (selectValue) selectValue.innerText = this.innerText;
       filterFunc(selectedValue);
 
-      lastClickedBtn.classList.remove("active");
+      if (lastClickedBtn) {
+        lastClickedBtn.classList.remove("active");
+      }
       this.classList.add("active");
-      lastClickedBtn = this;
+      lastClickedBtn = this; // Update lastClickedBtn to the current button
     });
   }
 }
