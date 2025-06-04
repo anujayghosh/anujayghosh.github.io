@@ -374,6 +374,20 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">AI and Software Engineer Consultant</h4>
+
+              <span>Stealth AI Startup, Feb 2025 - May 2025</span>
+
+              <p class="timeline-text">
+                <div style="color: var(--light-gray);">Designed and implemented secure, scalable backend APIs using Node.js, Express, and TypeScript, enabling OAuth2 authentication and Reddit API integration supporting over 10,000 automated actions per day. Engineered end-to-end Reddit automation: implemented endpoints for post/comment creation, subreddit search, and analysis.</div><br>
+                <div style="color: var(--light-gray);">Developed advanced AI-powered features by integrating OpenAI and Anthropic APIs for automated content generation, and intelligent workflow suggestions, automating content generation and analysis for 1,000 workflows, reducing manual moderation time by 60%. Resolved critical bugs and shipped high-impact features such as AI-generated Reddit comments, and robust error handling, decreasing production error rates by 70%.</div><br>
+                <div style="color: var(--light-gray);">Enhanced security and privacy by encrypting sensitive data, secure credential storage, and comprehensive input validation, resulting in zero security incidents. Optimized application performance through response caching and batch processing, reducing API response times by 50% and supporting 5x more concurrent users.</div><br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Graduate AI Research Assistant</h4>
 
               <span>Dept. of Computer Science - SUNY at Stony Brook, Aug 2023 - Dec 2024</span>
@@ -502,21 +516,6 @@
 
           <h3 class="h3 projects-title">Projects</h3>
 
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>AI/ML</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Software</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Research</button>
-            </li>
-          </ul>
-
           <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>Select category</div>
@@ -525,24 +524,36 @@
               </div>
             </button>
 
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>AI/ML</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Software</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Research</button>
               </li>
               <li class="select-item">
-                <button data-select-item>AI/ML</button>
+                <button data-select-item>Databases</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Software</button>
+                <button data-select-item>Networking</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Accessibility</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Research</button>
+                <button data-select-item>Other</button>
               </li>
             </ul>
           </div>
 
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="ai/ml">
+            <li class="project-item active" data-filter-item data-category="ai/ml, software, databases, networking">
               <a href="https://github.com/anujayghosh/genmem" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -555,7 +566,7 @@
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="research">
+            <li class="project-item active" data-filter-item data-category="ai/ml, research, accessibility">
               <a href="https://dl.acm.org/doi/10.1145/3663548.3688491" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -568,21 +579,20 @@
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="ai/ml">
+            <li class="project-item active" data-filter-item data-category="ai/ml, research">
               <a href="https://github.com/anujayghosh/cse527-finalproject" target="_blank">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <img src="./assets/images/project-3.jpg" alt="Class-agnostic-counting" loading="lazy">
                 </figure>
-                <h3 class="project-title">Class-agnostic counting using a similarity-aware frameworkr</h3>
+                <h3 class="project-title">Class-agnostic counting using a similarity-aware framework</h3>
                 <p class="project-category">Counting instances in a query image given a few exemplars</p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="software">
+            <li class="project-item active" data-filter-item data-category="software, databases">
               <a href="https://github.com/anujayghosh/CSE564-Visualization" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -595,7 +605,7 @@
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="software">
+            <li class="project-item active" data-filter-item data-category="ai/ml">
               <a href="https://www.linkedin.com/in/anujayghosh/details/projects/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -608,32 +618,32 @@
               </a>
             </li>
 
-          <li class="project-item active" data-filter-item data-category="research">
-            <a href="https://doi.org/10.1109/SENSORS43011.2019.8956920" target="_blank">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-6.jpg" alt="Baseline-Correction" loading="lazy">
-              </figure>
-              <h3 class="project-title">A baseline correction model for humidity and temperature compensation</h3>
-              <p class="project-category">ML Predictions on WO3 film based sensor for NO2 detection</p>
-            </a>
-          </li>
+            <li class="project-item active" data-filter-item data-category="ai/ml, research">
+              <a href="https://doi.org/10.1109/SENSORS43011.2019.8956920" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.jpg" alt="Baseline-Correction" loading="lazy">
+                </figure>
+                <h3 class="project-title">A baseline correction model for humidity and temperature compensation</h3>
+                <p class="project-category">ML Predictions on WO3 film based sensor for NO2 detection</p>
+              </a>
+            </li>
 
-          <li class="project-item active" data-filter-item data-category="research">
-            <a href="https://doi.org/10.1007/978-981-15-2305-2_32" target="_blank">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-7.jpg" alt="Handwritten-Digit-Recognition" loading="lazy">
-              </figure>
-              <h3 class="project-title">Steady Model for Classification of Handwritten Digit Recognition</h3>
-              <p class="project-category">ML Model for classification of handwritten digits</p>
-            </a>
-          </li>
-        </ul>
+            <li class="project-item active" data-filter-item data-category="ai/ml, research">
+              <a href="https://doi.org/10.1007/978-981-15-2305-2_32" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.jpg" alt="Handwritten-Digit-Recognition" loading="lazy">
+                </figure>
+                <h3 class="project-title">Steady Model for Classification of Handwritten Digit Recognition</h3>
+                <p class="project-category">ML Model for classification of handwritten digits</p>
+              </a>
+            </li>
+          </ul>
 
         </section>
 
